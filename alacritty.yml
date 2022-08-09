@@ -788,7 +788,35 @@ alt_send_esc: true
 key_bindings:
 
   # Ajustes para teclado macOS español/Spanish de España con layout ISO (no ANSI); tecla Intro grande.
-  #source: https://github-wiki-see.page/m/alacritty/alacritty/wiki/Keyboard-mappings
+  #source: https://github.com/alacritty/alacritty/wiki/Keyboard-mappings
+
+  #General Quality of Life Improvements
+  # MacOS
+
+  - { key: Comma,     mods: Command,      command:
+    {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}}
+  - { key: N,         mods: Command,      action: SpawnNewInstance       }
+  - { key: Space,     mods: Alt,          chars: " "                     }
+  - { key: Back, mods: Super, chars: "\x15" } # delete word/line
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # one word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # one word right
+  - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+
+  #Spanish
+  # - { key: Caret,    mods: Alt,     chars: "\x5C"                        }
+  # - { key: Key1,     mods: Alt,     chars: "|"                           }
+  # - { key: Key2,     mods: Alt,     chars: "@"                           }
+  # - { key: Key3,     mods: Alt,     chars: "#"                           }
+  # - { key: Key6,     mods: Alt,     chars: "¬"                           }
+  # - { key: LBracket, mods: Alt,     chars: "\x5B"                        }
+  # - { key: RBracket, mods: Alt,     chars: "\x5D"                        }
+  # - { key: Apostrophe,  mods: Alt,  chars: "\x7B"                        }
+  # - { key: Backslash,   mods: Alt,  chars: "\x7D"                        }
+
+  # macOS Spanish (Spain)
+  # Setup for macOS Spanish-Spain keyboard with ISO layout (not ANSI); big Enter key.
+
   - { key: 10,        mods: Alt,    chars: "\x5c" } # barra invertida `\`
   - { key: 18,        mods: Alt,    chars: "\x7c" } # barra vertical `|`
   - { key: Key2,      mods: Alt,    chars: "@" } # arroba `@`
@@ -798,6 +826,7 @@ key_bindings:
   - { key: 42,        mods: Alt,    chars: "}" } # cierra llaves `}`
   - { key: 33,        mods: Alt,    chars: "[" } # abre corchetes `[`
   - { key: 30,        mods: Alt,    chars: "]" } # cierra corchetes `]`
+
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
