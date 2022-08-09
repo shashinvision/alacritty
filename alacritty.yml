@@ -790,6 +790,11 @@ key_bindings:
   # Ajustes para teclado macOS español/Spanish de España con layout ISO (no ANSI); tecla Intro grande.
   #source: https://github.com/alacritty/alacritty/wiki/Keyboard-mappings
 
+  # Para ver los codigos del teclado se usa en la terminal
+  # /Applications/Alacritty.app/Contents/MacOS/alacritty --print-events
+  # alacritty --print-events
+
+
   #General Quality of Life Improvements
   # MacOS
 
@@ -827,11 +832,9 @@ key_bindings:
   # - { key: 30,        mods: Alt,    chars: "]" } # cierra corchetes `]`
 
     # Ajustes para el Teclado Mecanico RedDragon
-  - { key: Key7,      mods: Alt,    chars: "\x5c" } # barra invertida `\`
-  - { key: 18,        mods: Alt,    chars: "\x7c" } # barra vertical `|`
+  - { key: 27,      mods: Alt,    chars: "\x5c" } # barra invertida `\`
   - { key: 10,        mods: Alt,    chars: "¬" }
-  - { key: Key2,      mods: Alt,    chars: "@" }
-  - { key: Key3,      mods: Alt,    chars: "#" }
+  - { key: 12,      mods: Alt,    chars: "@" }
   - { key: 39,        mods: Alt,    chars: "^" }
   - { key: 42,        mods: Alt,    chars: "`" }
   - { key: 33,        mods: Alt,    chars: "«" }
