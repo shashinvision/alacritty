@@ -4,3 +4,8 @@
 ```
 https://www.youtube.com/watch?v=9ttxDIolNBo
 ```
+
+## Para la instalación edel font en arch 
+```
+sudo pacman -S ttf-meslo-nerd-font-powerlevel10k
+```
