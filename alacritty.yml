@@ -183,7 +183,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (One Dark)
+# Colors (One Dark) source https://github.com/eendroroy/alacritty-theme
 colors:
   # Default colors
   primary:
