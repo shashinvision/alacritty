@@ -815,6 +815,11 @@ key_bindings:
   - { key: Left, mods: Command, chars: "\x1bOH", mode: AppCursor } # Home
   - { key: Right, mods: Command, chars: "\x1bOF", mode: AppCursor } # End
 
+    # Copiar y Pegar, en Linux instalar sudo apt-get install xclip
+  - { key: C,         mods: Control, action: Copy }
+  - { key: V,         mods: Control, action: Paste }
+
+
   #Spanish
   # - { key: Caret,    mods: Alt,     chars: "\x5C"                        }
   # - { key: Key1,     mods: Alt,     chars: "|"                           }
