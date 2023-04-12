@@ -817,7 +817,7 @@ key_bindings:
 
     # Copiar y Pegar, en Linux instalar sudo apt-get install xclip
   - { key: C,         mods: Control, action: Copy }
-  - { key: V,         mods: Control, action: Paste }
+  - { key: P,         mods: Control, action: Paste }
 
 
   #Spanish
