@@ -816,8 +816,8 @@ key_bindings:
   - { key: Right, mods: Command, chars: "\x1bOF", mode: AppCursor } # End
 
     # Copiar y Pegar, en Linux instalar sudo apt-get install xclip
-  - { key: C,         mods: Control, action: Copy }
-  - { key: P,         mods: Control, action: Paste }
+  # - { key: C,         mods: Control, action: Copy }
+  # - { key: V,         mods: Control, action: Paste }
 
 
   #Spanish
@@ -926,8 +926,8 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
 
   # (Windows, Linux, and BSD only)
-  #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
-  #- { key: C,              mods: Control|Shift,                   action: Copy             }
+  - { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  # - { key: C,              mods: Control|Shift,                   action: Copy             }
   #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
   #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
